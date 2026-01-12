@@ -1,0 +1,1 @@
+value of x:18and y:12
