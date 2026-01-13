@@ -62,6 +62,7 @@ int main(){
         // cin >> age;
         // if(age>=18){
         //     cout << "You are an adult";
+
         // }else{
         //     cout << "you are not an adult";
         // }
@@ -73,6 +74,9 @@ int main(){
             cout << "F";
         }else if(marks<45 && marks>=25){
             cout << "E";
+            if(marks<30){
+                cout << " and almost pass";
+            }
         }
         else if(marks<50 && marks>=45){
             cout << "D";
