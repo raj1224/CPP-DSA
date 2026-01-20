@@ -55,11 +55,23 @@ void patt6(int n){
         cout << endl;
     }
 }
-
+//  pyramid pattern
+void patt7(int n){
+    for(int i=0;i<n;i++){
+        // for spaces
+        for(int j=1;j>=n-i-1;j--){
+            cout << " ";
+        }
+        for(int j=0;j<=i;j--){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
 
 int main(){
     // square pattern
     int n;
     cin >> n;
-    patt4(n);
+    patt7(n);
 }
