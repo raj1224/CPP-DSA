@@ -91,3 +91,39 @@ void explainedList(){
 }
 
 // Deque
+
+void explainedDeque(){
+    deque<int> dq;
+    dq.push_back(1);    // {1} 
+    dq.emplace_back(2); // {1,2}
+
+    dq.push_front(3); // {3,1,2}
+    dq.emplace_front(4); // {4,3,1,2}  
+    dq.pop_back(); // {4,3,1}
+    dq.pop_front(); // {3,1}
+
+    dq.back(); // 1
+    dq.front(); // 3
+
+    // rest functions same as vector
+    // begin, end, rbegin, rend, size, swap, clear, empty,insert,
+}
+
+// Stack
+// LIFO data structure
+// tc: O(1) for push(), pop(), top()
+void explainedStack(){
+    stack<int> st;
+    st.push(1);   // {1}
+    st.emplace(2); // {1,2} 
+
+    cout <<st.top(); // 2   
+
+    st.pop(); // {1}
+    cout << st.top(); // 1
+    cout << st.size(); // 1
+    cout << st.empty(); // 0 (false)
+
+    stack<int> st1, st2; // empty stacks
+    st1.swap(st2);
+}
